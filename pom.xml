@@ -15,7 +15,7 @@
         <jmeter.result.html.dir>${project.build.directory}\jmeter\html_detail_report</jmeter.result.html.dir>
         <!--此路径用于存储由模板转换过来的测试结果的html文件-->
         <jmeter.result.html.dir1>${project.build.directory}\jmeter\html_report</jmeter.result.html.dir1>
-        <ReportName>TestReport1</ReportName>
+        <ReportName>TestReport</ReportName>
   </properties>
   <dependencies>
         <dependency>
@@ -67,7 +67,7 @@
                 <!--用于解析模板，并生成测试结果的html文件的插件-->
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>xml-maven-plugin</artifactId>
-                <version>1.0.2</version>
+                <version>1.0-beta-3</version>
                 <executions>
                     <execution>
                         <!--在Maven生命周期中，通过verify命令执行JMeter的测试-->
