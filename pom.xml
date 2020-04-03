@@ -68,16 +68,8 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>xml-maven-plugin</artifactId>
                 <version>1.0-beta-3</version>
-                <executions>
-                    <execution>
-                        <!--在Maven生命周期中，通过verify命令执行JMeter的测试-->
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>transform</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
+                
+                                <configuration>
                     <transformationSets>
                         <transformationSet>
                             <!--保存JMeter原生测试结果文件（.jtl文件）的路径-->
@@ -107,6 +99,17 @@
                         </transformationSet>
                     </transformationSets>
                 </configuration>
+                
+                <executions>
+                    <execution>
+                        <!--在Maven生命周期中，通过verify命令执行JMeter的测试-->
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>transform</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
              </plugin>
         </plugins>
   </build>
