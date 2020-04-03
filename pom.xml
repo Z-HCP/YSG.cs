@@ -15,7 +15,7 @@
         <jmeter.result.html.dir>${project.build.directory}\jmeter\html_detail_report</jmeter.result.html.dir>
         <!--此路径用于存储由模板转换过来的测试结果的html文件-->
         <jmeter.result.html.dir1>${project.build.directory}\jmeter\html_report</jmeter.result.html.dir1>
-        <ReportName>TestReport</ReportName>
+        <ReportName>TestReport1</ReportName>
   </properties>
   <dependencies>
         <dependency>
